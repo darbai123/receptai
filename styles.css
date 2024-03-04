@@ -107,3 +107,79 @@ ul li.active a{
     text-align: left;
     border-radius: 0px;
 }
+
+
+@media screen and (min-width: 1200px) {
+    /* Prisitaikymas pagal 1200px ir didesnius ekranus */
+    .main {
+        max-width: 1200px;
+        margin: auto;
+    }
+    /* Papildomi stiliai pagal poreikius didesniems nei 1200px ekranams */
+}
+@media screen and (max-width: 1199px) {
+    /* Prisitaikymas pagal 1100-1199px ekranus */
+    .main {
+        max-width: 90%;
+        margin: auto;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .button {
+        width: 100%;
+        margin-top: 150px;
+        margin-left: 25%;
+    }
+    /* Papildomi stiliai pagal poreikius šiam dydžiui */
+}
+@media screen and (max-width: 1099px) {
+    /* Prisitaikymas pagal 992-1100px ekranus */
+    .title {
+        font-size: 30px;
+    }
+    .button {
+        width: 100%;
+        margin-top: 150px;
+        margin-left: 25%;
+    }
+    /* Papildomi stiliai pagal poreikius šiam dydžiui */
+}
+@media screen and (max-width: 991px) {
+    /* Prisitaikymas pagal 768-992px ekranus */
+    .title {
+        font-size: 24px;
+    }
+    .button {
+        width: 100%;
+        margin-top: 150px;
+        margin-left: 25%;
+    }
+    /* Papildomi stiliai pagal poreikius šiam dydžiui */
+}
+@media screen and (max-width: 767px) {
+    .title {
+        font-size: 20px; /* Sumažintas pavadinimo šrifto dydis */
+    }
+
+    ul {
+        flex-direction: column; /* Vertikalus išdėstymas */
+    }
+
+    /* Papildomi stiliai pagal poreikius */
+}
+
+@media screen and (max-width: 575px) {
+    /* Pradiniai stiliai, kai ekrano plotis mažesnis nei 576px */
+    .main {
+        max-width: 100%; /* Visada užpildo visas ekranas */
+        margin: 0; /* Šalinami maržai */
+        padding: 0 10px; /* Papildomas tarpas tarp kraštų */
+    }
+
+    .title {
+        font-size: 24px; /* Pakeičiama pavadinimo šrifto dydžio */
+    }
+
+    /* Papildomi stiliai pagal poreikius */
+}
